@@ -119,7 +119,7 @@ return {
         companion_port = 27121,
         receive_print_message = true,
         start_receiving_persistently_on_setup = false,
-        template_file = "~/codes/xcpc/template/main.cpp",
+        template_file = "~/.config/nvim/lua/plugins/template.cpp",
         evaluate_template_modifiers = true,
         date_format = "%c",
         received_files_extension = "cpp",
