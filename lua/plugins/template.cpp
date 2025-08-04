@@ -1,4 +1,4 @@
-// Author:  ChiyoYuki
+// Author:  ChiyoYuki =>
 // Problem: $(PROBLEM)
 // Contest: $(CONTEST)
 // Judge: $(JUDGE)
@@ -11,7 +11,8 @@
 #define _USE_MATH_DEFINES
 
 #include <bits/stdc++.h>
-
+// #include <bits/extc++.h>
+// using namespace __gnu_pbds;
 using namespace std;
 
 #define st first
@@ -28,21 +29,6 @@ using u4 = unsigned int;
 using u8 = unsigned long long int;
 using f06 = float;
 using f15 = double;
-
-template<typename __Tp>
-using vc=vector<__Tp>;
-template<typename __Tp>
-using dq=deque<__Tp>;
-template<typename __Tp>
-using pq=priority_queue<__Tp>;
-
-template<typename __Tp0,typename __Tp1>
-using pr=pair<__Tp0, __Tp1>;
-template<typename __Tp0,typename __Tp1>
-using mp=map<__Tp0,__Tp1>;
-template<typename __Tp0,typename __Tp1>
-using vp=vector<pair<__Tp0, __Tp1>>;
-
 
 using vi = vector<i8>;
 using di = deque<i8>;
@@ -69,9 +55,24 @@ const int mod9 = 998244353;
 const int moda = 1000000007;
 
 void solve(void);
-void YORN(bool f);
-void Yorn(bool f);
-void yorn(bool f);
+
+int main(void)
+{
+    ios::sync_with_stdio(false), cin.tie(0), cout.tie(0);
+
+// #ifndef ONLINE_JUDGE
+//     freopen("test.in", "r", stdin), freopen("test.out", "w", stdout);
+// #endif
+
+    unsigned long long _ = 1;
+    cin >> _;
+    while (_--)
+      { 
+        solve();
+        cout<<'\n';
+      }
+    return 0;
+}
 
 void solve(void)
 {
@@ -89,22 +90,3 @@ void solve(void)
 /*
 
 */
-
-int main(void)
-{
-    ios::sync_with_stdio(false), cin.tie(0), cout.tie(0);
-
-// #ifndef ONLINE_JUDGE
-//     freopen("test.in", "r", stdin), freopen("test.out", "w", stdout);
-// #endif
-
-    unsigned long long _ = 1;
-    cin >> _;
-    while (_--)
-        solve();
-    return 0;
-}
-
-void YORN(bool f) {cout << (f ? "YES\n" : "NO\n");}
-void Yorn(bool f) {cout << (f ? "Yes\n" : "No\n");}
-void yorn(bool f) {cout << (f ? "yes\n" : "no\n");}
